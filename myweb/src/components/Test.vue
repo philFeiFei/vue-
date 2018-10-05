@@ -7,11 +7,7 @@
 
 
 </template>
-<style scoped>
-//scoped 表示只对当前模版生效。
 
-
-</style>
 
 
 

@@ -26,7 +26,7 @@ export default {
 .todo-item {
     position: relative;
     background-color: #fff;
-    font-size: 24px;
+    font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 
     &:hover {

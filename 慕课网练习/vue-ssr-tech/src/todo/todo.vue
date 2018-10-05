@@ -90,7 +90,7 @@ export default {
   position: relative;
   margin: 0;
   width: 100%;
-  font-size: 24px;
+  font-size: 16spx;
   font-family: inherit;
   font-weight: inherit;
   line-height: 1.4em;

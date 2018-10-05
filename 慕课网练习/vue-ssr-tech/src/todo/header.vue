@@ -1,6 +1,6 @@
 <template>
   <app_header class="main-header">
-    <h1>TODO List</h1>
+    <h3>TODO List</h3>
   </app_header>
 </template>
 
@@ -8,10 +8,10 @@
 .main-header {
   text-align: center;
 
-  h1 {
-    font-size: 100px;
+  h3 {
+    font-size: 45px;
     color: blanchedalmond;
-    margin-top: 33px;
+    margin-top: 160px;
   }
 }
 </style>

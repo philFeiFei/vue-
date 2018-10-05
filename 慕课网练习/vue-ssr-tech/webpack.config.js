@@ -31,15 +31,27 @@ const config = {
                 loader: 'vue-loader',
             },
             {
+                test: /\.jsx$/,
+                loader: 'babel-loader',
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.styl/,
-                use: ['style-loader', 'css-loader', 'stylus-loader']
+                use: ['style-loader', 'css-loader',
+
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                        }
+                    },
+                    'stylus-loader']
             },
             {
-                test: /\.(jpg|gif)$/,
+                test: /\.(jpg|gif|png|svg)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -59,11 +71,11 @@ if (isDev) {//配置开发模式
     config.devtool = "#cheap-module-eval-source-map"   //es6代码不能再浏览器运行，用这个工具调试原生es6代码
     config.devServer = {
         port: '8000',
-        host: '0.0.0.0',
+        host: '127.0.0.1',
         overlay: {
             error: true,
         },
-        //open: true,  //这个编译完毕，会自动打开浏览器
+        open: true,  //这个编译完毕，会自动打开浏览器
         hot: true   //这个热加载，只更新当前的改动的组件
 
     }

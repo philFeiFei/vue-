@@ -5,6 +5,7 @@ import Hello from "@/components/HelloWorld";
 import player from "@/components/player";
 import playerProfile from "@/components/profile";
 import playerStatus from "@/components/status";
+import vuexTest from "@/components/vuexTest";
 
 Vue.use(Router);
 
@@ -14,20 +15,22 @@ export default new Router({
         {
             path: "/",
             name: "HelloWorld",
-            components: {
-                Hello: Hello,
+            components: {//这种写法是指定了，router-view的name必须是Hello才会展示此组件
+                Hello: Hello
 
             }
         },
         {
             path: "/test",
             name: "Test",
-            component: Test
+            components: {
+                Test: Test
+            }
         },
         {
             path: "/player/:uid",
             name: "player",
-            component: player,
+            component: player,//这种写法是指定了，没有name的router-view会展示此组件
             children: [
                 {
                     path: 'profile',

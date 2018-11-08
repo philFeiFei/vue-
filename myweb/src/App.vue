@@ -2,7 +2,7 @@
 <template>
     <div id="app1">
         <img src="./assets/logo.png">
-        <h4>vuex练习{{$store.state.count}}</h4>
+        <h4>main.js中data-》message：{{message}}--- {{msg}}； $store.state.count==》{{$store.state.count}}</h4>
         <c_vuex></c_vuex>
         <!--跳转到不同的路径，按照router index.js中配置显示相应的模版。 -->
         <h5>routerlink形式路由跳转</h5>
@@ -44,6 +44,18 @@ export default {
   },
   components: {
     c_vuex
+  },
+  data() {
+    return {
+      message: 1000
+    };
+  },
+  computed: {
+    msg() {
+      /* setInterval(() => {
+        this.message += 1;
+      }, 1000); */
+    }
   }
 };
 </script>

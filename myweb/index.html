@@ -4,20 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>myweb</title>
+    <title>phil vue study</title>
 </head>
 
 <body>
-    <p>李现福</p>
+    <h3>phil vue study</h3>
     <div style="border:1px solid red;height:50px; width: 400px;">我也是div，但我不会被代替，我没在vue里面呢。。</div>
     <p>下面是创建vue的div，下面这个div，在main.js中创建了vue，el指向就是 #app222,所以vue后续加载的是哪个模版，模版就会代替这个div</p>
     <p>本次demo：app.vue这个模版被注入了，它的id是app1，所以最后页面中 #app222的div会变为 #app1的div</p>
     <hr>
     <!--下面这个div，在main.js中创建了vue，el指向就是 #app222,所以vue后续加载的是哪个模版，模版就会代替这个div
        本次demo：app.vue这个模版被注入了，它的id是app1，所以最后页面中 #app222的div会变为 #app1的div-->
-    <div id="app222">aa</div>
+    <div id="app222">data111:{{welcome}}</div>
     <!-- built files will be auto injected -->
 
+
+    <script>
+        text();
+        function text() {
+            var a = 1;
+            const b = 2;
+            let c = a + b;
+            console.log("c=" + c);
+        }
+    </script>
 </body>
 
 </html>

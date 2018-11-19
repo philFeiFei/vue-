@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h3>this is the main outer app 类似app.vue </h3>
+        <h1>这里相当于登陆之后的layout vue，内部有组件跳转而已啦。。。都是layout的子路由</h1>
+        <router-link type="success" round to="/login">login Out</router-link>
+        <router-link to="/menu1">menu1</router-link>
+        <router-link to="/menu2">menu2</router-link>
 
         <router-view></router-view>
 

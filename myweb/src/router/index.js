@@ -73,6 +73,18 @@ export default () => {
                     }
                 ]
             },
+            {
+                path: '/upload',
+                component: Layout,
+                children: [
+                    {
+                        path: '',
+                        component: () => import('@/components/uploadInLayout'),
+                        name: 'Tab',
+                        meta: { title: 'tab', icon: 'tab' }
+                    }
+                ]
+            },
         ],
         // mode: 'history',
     });

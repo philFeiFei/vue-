@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="fanhui" unicode="&#59010;" d="M663.2-14.600000000000023L265 383.6l398.2 398.1 67.9-67.9-330.3-330.2 330.3-330.3z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="fanhui1" unicode="&#58963;" d="M584.884104 623.285088V896L0 418.847343l584.884104-477.073906V221.182189c406.119203 0 690.568023-108.991464 893.588249-347.528417-81.271091 340.755826-324.926863 681.354149-893.588249 749.631316"  horiz-adv-x="1482" />
+
+    
+
+
+  </font>
+</defs></svg>
